@@ -8,7 +8,7 @@ Functionalities as **creating**, **updating** and **deleting** of Folders, templ
 
 ## FileManager.js File
 
-With the concept of **OOP** programming, visualize the idea of creating, arranging, updating and deleting folders and files. The management of the resources within the project lies with the `class Filemanager` program, with following descriptive methods: 
+With the concept of **OOP** programming, visualize the idea of creating, arranging, updating and deleting folders and files. The management of the resources within the project lies within the `class Filemanager` program, with following descriptive methods: 
 
 1. **`createFolder`**
 1. **`deleteFolder`**
