@@ -2,7 +2,16 @@ body {
   background-color: white;
 }
 
-#cars {
-  border: none;
+.location-display {
+  border: 1px solid;
+}
+
+.location-display .first-level-path {
+  display: flex;
+  background-color: #fcfbfa;
+}
+
+#directory-actions {
+  outline: none;
   background-color: transparent;
 }
