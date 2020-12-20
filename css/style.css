@@ -1,5 +1,7 @@
 body {
   background-color: #5a5151;
+  color: #111111;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .main {
@@ -8,4 +10,6 @@ body {
 
 .nav {
   display: flex;
+  background-color: #dbdbdb;
+  padding: 8px;
 }
