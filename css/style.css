@@ -13,3 +13,27 @@ body {
   background-color: #dbdbdb;
   padding: 8px;
 }
+
+.nav .flaticon-left-arrow-line-symbol, .nav .flaticon-next {
+  background-color: #fcfbfa;
+  width: 100px;
+  padding: 9px 3px;
+  border: 1px solid;
+}
+
+.nav .flaticon-left-arrow-line-symbol-btn {
+  background-color: red;
+  width: 100pc;
+  padding-right: 25px;
+  transform: scale(0.5);
+}
+
+.nav .modal {
+  display: none;
+}
+
+.flaticon-delete {
+  color: #cd4f36;
+  background-color: aqua;
+  text-transform: s;
+}
