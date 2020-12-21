@@ -13,21 +13,19 @@
   <main id="main">
     <section class="main">
       <section class="nav">
-        <span class="nav__btn-container">
-          <span class="flaticon-right-arrow"></span>
+        <span class="nav__right-and-left-arrow-container">
+          <span class="flaticon-left-arrow-line-symbol"></span>
           
-          <span class="nav__forward-arrow">
-            <span class="flaticon-right-arrow"></span>
-          </span>
+          <span class="flaticon-next"></span>
         </span>
         
         <span class="nav__location">
           <span class="nav__location__home-icon"><i class="fa fa-home"></i></span> 
             <span class="nav__location__path-name">Home</span>
 
-            <!-- Drop-down menu(modal) -->
+            <!-- Drop-down menu(modal) for primary actions like creating folder, bookmarking, properties check e.t.c -->
 
-            <div class="modal">
+            <div class="modal modal--primary-actions">
               <ul class="modal__collections">
                 <li class="modal_item">New Folder...</li>
                 <li class="modal_item">Add to Bookmarks</li>
@@ -41,16 +39,34 @@
 
         <span class="nav__search-container">
           <input type="text" name="search" id="search-input">
-          <span class="nav__search-container__icon"><i class="fa fa-search"></i></span>
+
+          <span class="flaticon-search"></span>
+        </span>
+
+        <span class="nav__toggle-view">
+          <span class="flaticon-list"></span>
+        </span>
+
+        <span class="nav__view-options">
+          <span class="flaticon-down-arrow"></span>
+        </span>
+
+        <span class="nav__other-actions">
+          <span class="flaticon-menu"></span>
+
+          <!-- Dropdown modal for secondary actions like copy, paste and cut actions with other features -->
+          <div class="modal modal--secondary-actions">
+            <div class="modal__primary-action">
+              ul
+            </div>
+          </div>
         </span>
       </section>
 
       <section class="app-body">
         <section class="app-body__sidebar-panel">
           <span class="flaticon-cancel"></span>
-          <span class="flaticon-list"></span>
           <span class="flaticon-recent"></span>
-          <span class="flaticon-menu"></span>
           <span class="flaticon-file"></span>
           <span class="flaticon-delete"></span>
           <span class="flaticon-starred"></span>
@@ -58,15 +74,18 @@
           <span class="flaticon-home"></span>
           <span class="flaticon-square"></span>
           <span class="flaticon-horizontal-line-remove-button"></span>
-          <span class="flaticon-search"></span>
-          <span class="flaticon-next"></span>
-          <span class="flaticon-left-arrow-line-symbol"></span>
           <span class="flaticon-server"></span>
-          <span class="flaticon-trash-can"></span>
-          <span class="flaticon-music-player"></span>
-          <span class="flaticon-picture"></span>
-          <span class="flaticon-film-strip"></span>
-          <span class="flaticon-add"></span>
+          <i class="flaticon-trash-can"></i>
+          <i class="flaticon-music-player"></i>
+          <i class="flaticon-picture"></i>
+          <i class="flaticon-film-strip"></i>
+          <i class="flaticon-add"></i>
+          <span class="flaticon-add-folder"></span>
+          <span class="flaticon-add-window"></span>
+          <span class="flaticon-copy"></span>
+          <span class="flaticon-paste"></span>
+          <span class="flaticon-scissors"></span>
+          <span class="flaticon-tab-key"></span>
         </section>
 
         <section class="folder-container">
