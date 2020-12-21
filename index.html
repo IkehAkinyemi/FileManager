@@ -16,19 +16,24 @@
     <section class="main">
       <section class="nav">
         <span class="nav__right-and-left-arrow-container">
-          <span class="flaticon-left-arrow-line-symbol-btn">
-            <span class="flaticon-left-arrow-line-symbol"></span>
-          </span>
+          <div class="left-arrow-btn">
+            <img src="./assets/svg/left-arrow.svg" alt="left-arrow">
+          </div>
           
-          <span class="flaticon-next"></span>
+          <div class="right-arrow-btn">
+            <img src="./assets/svg/right-arrow.svg" alt="right-arrow">
+          </div>
         </span>
         
         <span class="nav__location">
           <div class="pwd">
-            <span class="flaticon-home"></span>
-            <span class="nav__location__path-name">Home</span>
+            <span class="home-btn">
+              <!-- <img src="./assets/svg/home.svg" alt="home"> -->
+            </span>
+            <span class="home-btn__path-name">Home</span>
             <span class="flaticon-down-arrow"></span>
           </div>
+
           <!-- Drop-down menu(modal) for primary actions like creating folder, bookmarking, properties check e.t.c -->
           <div class="modal modal--primary-actions">
             <ul class="modal__collections">
@@ -39,6 +44,11 @@
               <li class="modal_item">Properties</li>
               <li class="modal_item">Restore Missing Files</li>
             </ul>
+          </div>
+
+          <div class="pwd">
+            <span class="pwd__path-name">Documents</span>
+            <span class="flaticon-down-arrow"></span>
           </div>
         </span>
 

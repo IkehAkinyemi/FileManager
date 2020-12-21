@@ -1,3 +1,45 @@
+.nav {
+  display: flex;
+  background-color: #dbdbdb;
+  padding: 8px;
+  border-radius: 6px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.nav__right-and-left-arrow-container {
+  display: flex;
+}
+
+.nav .left-arrow-btn, .nav .right-arrow-btn {
+  background-color: #fcfbfa;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #8c97a0;
+  line-height: 40px;
+}
+
+.nav .left-arrow-btn {
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.nav .right-arrow-btn {
+  border-radius: 4px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.nav [alt="left-arrow"], .nav [alt="right-arrow"] {
+  width: 20px;
+  margin-left: 5px;
+}
+
+.nav .modal {
+  display: none;
+}
+
 body {
   background-color: #5a5151;
   color: #111111;
@@ -6,34 +48,7 @@ body {
 
 .main {
   background-color: #fcfbfa;
-}
-
-.nav {
-  display: flex;
-  background-color: #dbdbdb;
-  padding: 8px;
-}
-
-.nav .flaticon-left-arrow-line-symbol, .nav .flaticon-next {
-  background-color: #fcfbfa;
-  width: 100px;
-  padding: 9px 3px;
-  border: 1px solid;
-}
-
-.nav .flaticon-left-arrow-line-symbol-btn {
-  background-color: red;
-  width: 100pc;
-  padding-right: 25px;
-  transform: scale(0.5);
-}
-
-.nav .modal {
-  display: none;
-}
-
-.flaticon-delete {
-  color: #cd4f36;
-  background-color: aqua;
-  text-transform: s;
+  border-radius: 6px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
