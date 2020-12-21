@@ -10,6 +10,8 @@
   <title>FileManager</title>
 </head>
 <body>
+
+  <!-- Using BEM naming conventions in the naming the element's classes and ids-->
   <main id="main">
     <section class="main">
       <section class="nav">
@@ -56,36 +58,61 @@
 
           <!-- Dropdown modal for secondary actions like copy, paste and cut actions with other features -->
           <div class="modal modal--secondary-actions">
-            <div class="modal__primary-action">
-              ul
+            <div class="modal__create-new">
+              <span class="flaticon-add-window"></span>
+              <span class="flaticon-tab-key"></span>
+              <span class="flaticon-add-folder"></span>
             </div>
+            <br>
+
+            <div class="modal__basic-actions">
+              <span class="edit">EDIT</span>
+              <span class="flaticon-scissors"></span>
+              <span class="flaticon-copy"></span>
+              <span class="flaticon-paste"></span>
+            </div>
+            <br>
+
+            <div class="select-all">Select All</div>
+            <br>
+
+            <div class="modal__hidden-checkbox">
+              <label for="hidden-files">Show Hidden Files</label>
+              <input type="checkbox" name="hidden-files-btn" id="hidden-files">
+            </div>
+
+            <div class="modal__sidebar-checkbox">
+              <label for="show-sidebar">Show Sidebar</label>
+              <input type="checkbox" name="show-sidebar-btn" id="show-sidebar">
+            </div>
+            <br>
+
+            <div class="preferences">Preferences</div>
+            <div class="Keyboard-shortcuts">Keyboard Shortcuts</div>
+            <div class="help">Help</div>
+            <div class="about-filemanager">About FileManager</div>
           </div>
         </span>
+
+        <span class="flaticon-horizontal-line-remove-button"></span>
+        <span class="flaticon-square"></span>
+        <span class="flaticon-cancel"></span>
       </section>
 
       <section class="app-body">
         <section class="app-body__sidebar-panel">
-          <span class="flaticon-cancel"></span>
           <span class="flaticon-recent"></span>
           <span class="flaticon-file"></span>
           <span class="flaticon-delete"></span>
           <span class="flaticon-starred"></span>
           <span class="flaticon-cloud-computing"></span>
           <span class="flaticon-home"></span>
-          <span class="flaticon-square"></span>
-          <span class="flaticon-horizontal-line-remove-button"></span>
           <span class="flaticon-server"></span>
           <i class="flaticon-trash-can"></i>
           <i class="flaticon-music-player"></i>
           <i class="flaticon-picture"></i>
           <i class="flaticon-film-strip"></i>
           <i class="flaticon-add"></i>
-          <span class="flaticon-add-folder"></span>
-          <span class="flaticon-add-window"></span>
-          <span class="flaticon-copy"></span>
-          <span class="flaticon-paste"></span>
-          <span class="flaticon-scissors"></span>
-          <span class="flaticon-tab-key"></span>
         </section>
 
         <section class="folder-container">
