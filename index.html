@@ -26,36 +26,50 @@
         </span>
         
         <span class="nav__location">
-          <div class="pwd">
-            <span class="home-btn">
-              <!-- <img src="./assets/svg/home.svg" alt="home"> -->
+          <div class="nav__location--active">
+            <div class="pwd pwd--first-path">
+              <div class="home-btn">
+                <img src="./assets/svg/home.svg" alt="home">
+              </div>
+              <span class="pwd__path-name">Home</span>
+              <span class="down-arrow-btn">
+                <img src="./assets/svg/down-arrow.svg" alt="down-arrow">
+              </span>
+            </div>
+  
+            <!-- Drop-down menu(modal) for primary actions like creating folder, bookmarking, properties check e.t.c -->
+            <div class="modal modal--primary-actions">
+              <ul class="modal__collections">
+                <li class="modal_item">New Folder...</li>
+                <li class="modal_item">Add to Bookmarks</li>
+                <li class="modal_item">Paste</li>
+                <li class="modal_item">Select All</li>
+                <li class="modal_item">Properties</li>
+                <li class="modal_item">Restore Missing Files</li>
+              </ul>
+            </div>
+  
+            <div class="pwd pwd--second-path">
+              <span class="pwd__path-name">Documents</span>
+              <span class="down-arrow-btn">
+                <img src="./assets/svg/down-arrow.svg" alt="down-arrow">
+              </span>
+            </div>
+          </div>
+         
+          <div class="search-container">
+            <img src="./assets/svg/search.svg" alt="search">
+            <input type="text" name="search" id="search-input">
+            
+            <span class="down-arrow-btn">
+              <img src="./assets/svg/down-arrow.svg" alt="down-arrow">
             </span>
-            <span class="home-btn__path-name">Home</span>
-            <span class="flaticon-down-arrow"></span>
-          </div>
-
-          <!-- Drop-down menu(modal) for primary actions like creating folder, bookmarking, properties check e.t.c -->
-          <div class="modal modal--primary-actions">
-            <ul class="modal__collections">
-              <li class="modal_item">New Folder...</li>
-              <li class="modal_item">Add to Bookmarks</li>
-              <li class="modal_item">Paste</li>
-              <li class="modal_item">Select All</li>
-              <li class="modal_item">Properties</li>
-              <li class="modal_item">Restore Missing Files</li>
-            </ul>
-          </div>
-
-          <div class="pwd">
-            <span class="pwd__path-name">Documents</span>
-            <span class="flaticon-down-arrow"></span>
-          </div>
+          </div>  
         </span>
 
         <span class="nav__search-container">
-          <input type="text" name="search" id="search-input">
 
-          <span class="flaticon-search"></span>
+          <img src="./assets/svg/search.svg" alt="search">
         </span>
 
         <span class="nav__toggle-view">
