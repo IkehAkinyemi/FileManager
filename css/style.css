@@ -72,6 +72,8 @@
   width: 100%;
   border: none;
   border-radius: 3px;
+  padding-left: 45px;
+  outline-color: #cd4f36;
 }
 
 .nav__location .search-active .down-arrow-btn {
@@ -278,6 +280,25 @@
   display: none;
 }
 
+.nav .modal--search-actions .when-container .date-input {
+  display: flex;
+  border: 1px solid;
+}
+
+.nav .modal--search-actions .when-container .date-input #date-input-field {
+  margin-right: auto;
+  padding: 10px 1.5rem;
+  border: none;
+  outline-color: #cd4f36;
+  width: 120%;
+}
+
+.nav .modal--search-actions .when-container .date-input [alt="calendar"] {
+  margin-left: -1.25rem;
+  position: relative;
+  right: 17px;
+}
+
 .nav .modal--search-actions .what-container {
   margin-top: 2rem;
 }
@@ -340,6 +361,7 @@ body {
   background-color: #5a5151;
   color: #0a0a0ab4;
   font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
 }
 
 .main {
