@@ -50,29 +50,31 @@
 
 .nav__location--active {
   display: flex;
+  display: none;
 }
 
-.nav__location .search-container {
+.nav__location .search-active {
   display: none;
+  display: flex;
   position: relative;
   width: 100%;
   border-radius: 3px;
 }
 
-.nav__location .search-container [alt="search"] {
+.nav__location .search-active [alt="search"] {
   width: 17px;
   position: absolute;
   margin-top: 8px;
   margin-left: 15px;
 }
 
-.nav__location .search-container #search-input {
+.nav__location .search-active #search-input {
   width: 100%;
   border: none;
   border-radius: 3px;
 }
 
-.nav__location .search-container .down-arrow-btn {
+.nav__location .search-active .down-arrow-btn {
   line-height: 32px;
   width: 32px;
   border: 1px solid #8c97a0;
@@ -86,7 +88,7 @@
   text-align: center;
 }
 
-.nav__location .search-container [alt="down-arrow"] {
+.nav__location .search-active [alt="down-arrow"] {
   width: 12px;
 }
 
@@ -207,7 +209,107 @@
 
 .nav .modal {
   position: absolute;
-  top: 2px;
+}
+
+.nav .modal--primary-actions {
+  background-color: #fcfcfb;
+  margin-top: 2.7rem;
+  margin-left: -1.5rem;
+  border-radius: 5px;
+  box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #fcfbfa88;
+}
+
+.nav .modal--primary-actions [alt="drop-up-arrow"] {
+  position: absolute;
+  right: 50%;
+  top: -10px;
+  width: 12px;
+}
+
+.nav .modal--primary-actions ul {
+  list-style-type: none;
+  padding: 0px 1.2em;
+  line-height: 1.8rem;
+}
+
+.nav .modal--primary-actions ul li:hover {
+  background-color: #dbdbdb;
+}
+
+.nav .modal--primary-actions ul li:nth-child(3) {
+  color: #c0c6c7;
+  margin-top: 1rem;
+}
+
+.nav .modal--search-actions {
+  width: 310px;
+  background-color: #fcfcfb;
+  margin-top: 1rem;
+  margin-left: -9.59rem;
+  border-radius: 5px;
+  box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #fcfbfa88;
+  text-align: start;
+  padding: .5rem 1.2rem;
+  line-height: 16px;
+}
+
+.nav .modal--search-actions [alt="drop-up-arrow"] {
+  position: absolute;
+  right: 50%;
+  top: -10px;
+  width: 12px;
+}
+
+.nav .modal--search-actions [alt="calendar"] {
+  width: 20px;
+}
+
+.nav .modal--search-actions .when-container .when-p {
+  color: #c0c6c7;
+}
+
+.nav .modal--search-actions .when-container .select-when-p {
+  border: 1px solid #8c97a0;
+  padding: 10px 1.5rem;
+  margin-top: -7px;
+  border-radius: 5px;
+}
+
+.nav .modal--search-actions .when-container .date-input-container {
+  display: none;
+}
+
+.nav .modal--search-actions .what-container {
+  margin-top: 2rem;
+}
+
+.nav .modal--search-actions .what-container .what-p {
+  color: #c0c6c7;
+}
+
+.nav .modal--search-actions .what-container .anything-input {
+  display: flex;
+  border: 1px solid #8c97a0;
+  padding: 10px 1.5rem;
+  margin-top: -7px;
+  border-radius: 5px;
+}
+
+.nav .modal--search-actions .what-container .anything-input .anything-p {
+  margin-right: auto;
+}
+
+.nav .modal--search-actions .what-container .anything-input-container {
+  display: none;
+}
+
+.nav .modal--search-actions .search-text-format {
+  display: flex;
+  border: 1px solid;
+}
+
+.nav .modal--secondary-actions {
+  display: none;
 }
 
 body {
