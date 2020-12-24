@@ -205,6 +205,7 @@
 
 .nav [alt="cancel"] {
   width: 20px;
+  margin-right: .7%;
 }
 
 .nav .modal {
@@ -251,6 +252,7 @@
   text-align: start;
   padding: .5rem 1.2rem;
   line-height: 16px;
+  padding-bottom: 15px;
 }
 
 .nav .modal--search-actions [alt="drop-up-arrow"] {
@@ -273,9 +275,6 @@
   padding: 10px 1.5rem;
   margin-top: -7px;
   border-radius: 5px;
-}
-
-.nav .modal--search-actions .when-container .date-input-container {
   display: none;
 }
 
@@ -305,7 +304,32 @@
 
 .nav .modal--search-actions .search-text-format {
   display: flex;
-  border: 1px solid;
+  border: 1px solid #8c97a0;
+  margin-top: 3%;
+  border-radius: 5px;
+}
+
+.nav .modal--search-actions .search-text-format .full-text {
+  width: 50%;
+  height: 38px;
+  border: none;
+  background-color: #dbdbdb;
+  font-size: 16px;
+  color: #0a0a0ab4;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 5px;
+}
+
+.nav .modal--search-actions .search-text-format .file-name {
+  width: 50%;
+  height: 38px;
+  border: none;
+  border-left: 1px solid #8c97a0;
+  background-color: #fcfcfb;
+  font-size: 16px;
+  color: #0a0a0ab4;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 5px;
 }
 
 .nav .modal--secondary-actions {
@@ -314,7 +338,7 @@
 
 body {
   background-color: #5a5151;
-  color: #0a0a0aa9;
+  color: #0a0a0ab4;
   font-family: "Ubuntu", sans-serif;
 }
 
