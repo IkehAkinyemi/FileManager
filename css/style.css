@@ -239,6 +239,19 @@
   padding: 0rem;
 }
 
+.nav__view-options .modal--view-options .sort-type-collection .sort-item {
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.nav__view-options .modal--view-options .sort-type-collection .sort-item label {
+  margin-right: auto;
+}
+
+.nav__view-options .modal--view-options .reload {
+  margin-bottom: 0px;
+}
+
 .nav__other-actions {
   background-color: #fcfbfa;
   border: 1px solid #8c97a0;
