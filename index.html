@@ -69,6 +69,7 @@
             <span class="down-arrow-btn">
               <img src="./assets/svg/down-arrow.svg" alt="down-arrow">
 
+              <!-- modal for the controlling the search algorithm search-method-->
               <div class="modal modal--search-actions">
                 <img src="./assets/svg/drop-up-arrow.svg" alt="drop-up-arrow">
                 <div class="when-container">
@@ -161,6 +162,60 @@
 
         <span class="nav__view-options" title="View options">
           <img src="./assets/svg/down-arrow.svg" alt="down-arrow">
+
+          <div class="modal modal--view-options">
+            <div class="ctrl-zoom">
+              <span class="zoom-in">
+                <img src="./assets/svg/zoom-in.svg" alt="zoom-in">
+              </span>
+
+              <span class="zoom-percentage">50%</span>
+
+              <span class="zoom-out">
+                <img src="./assets/svg/zoom-out.svg" alt="zoom-out">
+              </span>
+            </div>
+
+            <p class="undo-actions">Undo</p>
+            <p class="redo-actions">Redo</p>
+
+            <div class="sort-types">
+              <p class="sort-p">Sort</p>
+
+              <ul class="sort-type-collection">
+                <li class="sort-item">
+                  <label for="a-z">A-Z</label>
+                  <input type="radio" name="radio" id="a-z">
+                </li>
+
+                <li class="sort-item">
+                  <label for="z-a">Z-A</label>
+                  <input type="radio" name="radio" id="z-a">
+                </li>
+
+                <li class="sort-item">
+                  <label for="last-modified-btn">Last Modified</label>
+                  <input type="radio" name="radio" id="last-modified-btn">
+                </li>
+
+                <li class="sort-item">
+                  <label for="first-modified-btn">First Modified</label>
+                  <input type="radio" name="radio" id="first-modified-btn">
+                </li>
+
+                <li class="sort-item">
+                  <label for="size">Size</label>
+                  <input type="radio" name="radio" id="size">
+                </li>
+
+                <li class="sort-item">
+                  <label for="type">Type</label>
+                  <input type="radio" name="radio" id="type">
+                </li>
+              </ul>
+            </div>
+            <p class="reload">Reload</p>
+          </div>
         </span>
 
         <span class="nav__other-actions">

@@ -245,6 +245,7 @@
 }
 
 .nav .modal--search-actions {
+  display: none;
   width: 310px;
   background-color: #fcfcfb;
   margin-top: 1rem;
