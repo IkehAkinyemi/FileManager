@@ -179,6 +179,49 @@
   width: 12px;
 }
 
+.nav__view-options .modal--view-options {
+  background-color: #fcfcfb;
+  margin-top: 24rem;
+  border-radius: 5px;
+  box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #fcfbfa88;
+  margin-left: .8rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid;
+}
+
+.nav__view-options .modal--view-options [alt="drop-up-arrow"] {
+  position: absolute;
+  right: 50%;
+  top: -10px;
+  width: 12px;
+}
+
+.nav__view-options .modal--view-options .ctrl-zoom {
+  width: 100%;
+  border: 1px solid #8c97a0;
+  display: flex;
+  border-radius: 4px;
+}
+
+.nav__view-options .modal--view-options .zoom-in, .nav__view-options .modal--view-options .zoom-percentage, .nav__view-options .modal--view-options .zoom-out {
+  width: 50%;
+  padding: 6px 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__view-options .modal--view-options .zoom-percentage, .nav__view-options .modal--view-options .zoom-out {
+  border-left: 1px solid #8c97a0;
+}
+
+.nav__view-options .modal--view-options [alt="zoom-in"] {
+  width: 15px;
+}
+
+.nav__view-options .modal--view-options [alt="zoom-out"] {
+  width: 15px;
+}
+
 .nav__other-actions {
   background-color: #fcfbfa;
   border: 1px solid #8c97a0;
