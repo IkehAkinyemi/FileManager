@@ -73,7 +73,7 @@
   border: none;
   border-radius: 3px;
   padding-left: 45px;
-  outline-color: #cd4f36;
+  outline-color: #e05134;
 }
 
 .nav__location .search-active .down-arrow-btn {
@@ -277,19 +277,21 @@
   padding: 10px 1.5rem;
   margin-top: -7px;
   border-radius: 5px;
-  display: none;
 }
 
 .nav .modal--search-actions .when-container .date-input {
   display: flex;
+  display: none;
   border: 1px solid;
+  border-radius: 4px;
 }
 
 .nav .modal--search-actions .when-container .date-input #date-input-field {
   margin-right: auto;
   padding: 10px 1.5rem;
   border: none;
-  outline-color: #cd4f36;
+  border-radius: 4px;
+  outline-color: #e05134;
   width: 120%;
 }
 
@@ -297,6 +299,34 @@
   margin-left: -1.25rem;
   position: relative;
   right: 17px;
+}
+
+.nav .modal--search-actions .when-container .date-input-container {
+  display: none;
+}
+
+.nav .modal--search-actions .when-container .date-input-container .since-p {
+  color: #c0c6c7;
+}
+
+.nav .modal--search-actions .when-container .date-input-container .since-collection {
+  height: 190px;
+  border: 1px solid #8c97a0;
+  overflow-y: scroll;
+  list-style-type: none;
+  padding: 0rem;
+}
+
+.nav .modal--search-actions .when-container .date-input-container .since-collection .since-date-item {
+  padding: 2.5px 5px;
+}
+
+.nav .modal--search-actions .when-container .date-input-container .since-collection .since-date-item:hover {
+  background-color: #c0c6c7;
+}
+
+.nav .modal--search-actions .when-container .date-input-container .date-radio-btn [for="last-modified"] {
+  margin-right: 15%;
 }
 
 .nav .modal--search-actions .what-container {
@@ -321,6 +351,31 @@
 
 .nav .modal--search-actions .what-container .anything-input-container {
   display: none;
+}
+
+.nav .modal--search-actions .what-container .anything-input-container .anything-collection {
+  height: 190px;
+  border: 1px solid #8c97a0;
+  overflow-y: scroll;
+  list-style-type: none;
+  padding: 0rem;
+}
+
+.nav .modal--search-actions .what-container .anything-input-container .anything-item:nth-child(1) {
+  background-color: #e05134;
+  color: #fcfcfb;
+}
+
+.nav .modal--search-actions .what-container .anything-input-container .anything-item {
+  padding: 2.5px 5px;
+}
+
+.nav .modal--search-actions .what-container .anything-input-container .anything-item:hover {
+  background-color: #c0c6c7;
+}
+
+.nav .modal--search-actions .what-container .anything-input-container .anything-item:nth-child(1):hover {
+  background-color: #e05134;
 }
 
 .nav .modal--search-actions .search-text-format {

@@ -16,11 +16,11 @@
     <section class="main">
       <section class="nav">
         <span class="nav__right-and-left-arrow-container">
-          <div class="left-arrow-btn">
+          <div class="left-arrow-btn" title="Go back">
             <img src="./assets/svg/left-arrow.svg" alt="left-arrow">
           </div>
           
-          <div class="right-arrow-btn">
+          <div class="right-arrow-btn" title="Go forward">
             <img src="./assets/svg/right-arrow.svg" alt="right-arrow">
           </div>
         </span>
@@ -105,12 +105,12 @@
                       <li class="since-date-item">5 year ago</li>
                     </ul>
 
-                    <span class="date-checkboxes">
+                    <span class="date-radio-btn">
+                      <input type="radio" name="radio" id="last-modified" checked>
                       <label for="last-modified">Last modified</label>
-                      <input type="checkbox" name="last-modified" id="last-modified" autocomplete="off">
 
+                      <input type="radio" name="radio" id="last-used"> 
                       <label for="last-used">Last used</label>
-                      <input type="checkbox" name="last-used" id="last-used">
                     </span>
                   </div>
                 </div>
@@ -118,48 +118,48 @@
                 <div class="what-container">
                   <p class="what-p">What</p>
 
-                  <span class="anything-input">
+                  <span class="anything-input" title="Which file types will be searched">
                     <span class="anything-p">Anything</span>
                     <img src="./assets/svg/down-arrow.svg" alt="down-arrow">
                   </span>
 
                   <div class="anything-input-container">
-                    <ul class="since-collection">
-                      <li class="since-date-item">Anything</li>
-                      <li class="since-date-item">Files</li>
-                      <li class="since-date-item">Folders</li>
-                      <li class="since-date-item">Documents</li>
-                      <li class="since-date-item">Ilustration</li>
-                      <li class="since-date-item">Music</li>
-                      <li class="since-date-item">PDF/PostScript</li>
-                      <li class="since-date-item">Pictures</li>
-                      <li class="since-date-item">Presentation</li>
-                      <li class="since-date-item">Spreadsheet</li>
-                      <li class="since-date-item">Text File</li>
-                      <li class="since-date-item">Video</li>
-                      <li class="since-date-item">Other Type...</li>
+                    <ul class="anything-collection">
+                      <li class="anything-item">Anything</li>
+                      <li class="anything-item">Files</li>
+                      <li class="anything-item">Folders</li>
+                      <li class="anything-item">Documents</li>
+                      <li class="anything-item">Ilustration</li>
+                      <li class="anything-item">Music</li>
+                      <li class="anything-item">PDF/PostScript</li>
+                      <li class="anything-item">Pictures</li>
+                      <li class="anything-item">Presentation</li>
+                      <li class="anything-item">Spreadsheet</li>
+                      <li class="anything-item">Text File</li>
+                      <li class="anything-item">Video</li>
+                      <li class="anything-item">Other Type...</li>
                     </ul>
                   </div>
                 </div>
 
                 <div class="search-text-format">
-                  <button class="full-text">Full Text</button>
-                  <button class="file-name">File Name</button>
+                  <button class="full-text" title="Search on the file content and name">Full Text</button>
+                  <button class="file-name" title="Search only on the file name">File Name</button>
                 </div>
               </div>
             </span>
           </div>  
         </span>
 
-        <span class="nav__search-container">
+        <span class="nav__search-container" title="Search">
           <img src="./assets/svg/search.svg" alt="search">
         </span>
 
-        <span class="nav__toggle-view">
+        <span class="nav__toggle-view" title="Toggle view">
           <img src="./assets/svg/list.svg" alt="list-view">
         </span>
 
-        <span class="nav__view-options">
+        <span class="nav__view-options" title="View options">
           <img src="./assets/svg/down-arrow.svg" alt="down-arrow">
         </span>
 
