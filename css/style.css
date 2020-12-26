@@ -505,6 +505,28 @@
   width: 19px;
 }
 
+.nav .modal--secondary-actions .modal__create-new {
+  display: flex;
+  width: 100%;
+}
+
+.nav .modal--secondary-actions .modal__create-new span {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  border: 1px solid #8c97a0;
+  padding: 6px 6px;
+  border-radius: 4px;
+}
+
+.nav .modal--secondary-actions .modal__create-new .add-window {
+  border-color: #e05134;
+}
+
+.nav .modal--secondary-actions .modal__create-new .tab-key {
+  margin: 0rem 7px;
+}
+
 .nav .modal--secondary-actions .modal__create-new [alt="add-window"], .nav .modal--secondary-actions .modal__create-new [alt="add-folder"], .nav .modal--secondary-actions .modal__create-new [alt="tab-key"] {
   width: 19px;
 }
