@@ -290,6 +290,25 @@
   border-radius: 50%;
 }
 
+.nav [alt="horizontal-line-remove"]:hover, .nav [alt="square"]:hover, .nav [alt="cancel"]:hover {
+  animation-name: other-actions;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes other-actions {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
 .nav .modal {
   position: absolute;
 }
