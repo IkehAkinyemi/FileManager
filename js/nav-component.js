@@ -14,6 +14,7 @@
      searchContainer = document.querySelector(".search-active"),
      searchIcon = document.querySelector("[alt='search']"),
      navSearchField = document.querySelector("#search-input");
+     searchModal = document.querySelector(".down-arrow-btn")
 
 
 /**
