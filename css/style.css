@@ -50,12 +50,10 @@
 
 .nav__location--active {
   display: flex;
-  display: none;
 }
 
 .nav__location .search-active {
   display: none;
-  display: flex;
   position: relative;
   width: 100%;
   border-radius: 3px;
