@@ -34,17 +34,29 @@ let secondDirContainer = `
   </div>
 `;
 
+/**operation flag variables*/
+let isSearchModal = false;
+
+
 //Eventlistener to control the display of the search field or hide the search field.
 searchContainer.addEventListener("click", (e) => {
+  // console.log(e.target.parentNode);
+  // console.log(e.target);
   if (e.target.classList.contains("down-arrow-btn") || e.target.alt == "down-arrow") {
     searchModal.style.display = "block";
+  }
+  
+  if(searchModal.style.display ==  "block" && (e.target.classList.contains("down-arrow-btn") || e.target.alt == "down-arrow")) {
+    searchModal.style.display = "none";
+    isSearchModal = true;
   }
 });
 
 body.addEventListener('click', (e) => {
-  console.log(searchModal.style.display);
-
   if (!e.target.classList.contains("down-arrow-btn") && e.target.alt != "down-arrow") {
-    searchModal.style.display = "none";
+    if(!e.target.closest(".down-arrow-btn")) {
+      searchModal.style.display = "none";
+      isSearchModal = false;
+    }
   }
 });
