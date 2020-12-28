@@ -50,12 +50,10 @@
 
 .nav__location--active {
   display: flex;
-  display: none;
 }
 
 .nav__location .search-active {
   display: none;
-  display: flex;
   position: relative;
   width: 100%;
   border-radius: 3px;
@@ -77,8 +75,8 @@
 }
 
 .nav__location .search-active .down-arrow-btn {
-  line-height: 32px;
-  width: 32px;
+  width: calc(42.99px - 0.95px);
+  height: 32px;
   border: 1px solid #8c97a0;
   border-right: none;
   border-top: none;
@@ -87,7 +85,9 @@
   border-bottom-left-radius: 0px;
   border-radius: 3px;
   background-color: #fcfbfa;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav__location .search-active [alt="down-arrow"] {
@@ -271,7 +271,7 @@
 }
 
 .nav [alt="horizontal-line-remove"] {
-  margin-top: 6px;
+  margin-top: 3px;
   width: 11px;
 }
 
