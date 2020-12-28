@@ -13,8 +13,8 @@
      primaryModal = document.querySelector(".modal--primary-actions"),
      searchContainer = document.querySelector(".search-active"),
      searchIcon = document.querySelector("[alt='search']"),
-     navSearchField = document.querySelector("#search-input");
-     searchModal = document.querySelector(".down-arrow-btn")
+     navSearchField = document.querySelector("#search-input"),
+     searchFieldDropDown = document.querySelector(".down-arrow-btn");
 
 
 /**
@@ -32,3 +32,11 @@ let secondDirContainer = `
   </div>
 `;
 
+//Eventlistener to control the display of the search field or hide the search field.
+searchContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("down-arrow-btn") || e.target.alt == "down-arrow") {
+    document.querySelector(".modal--search-actions").style.display = "block";
+  }
+});
+
+// console.log(searchFieldDropDown);
