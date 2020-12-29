@@ -36,7 +36,6 @@ let secondDirContainer = `
 
 
 //Eventlistener to control the display of the directory modal or hide it.
-console.log(document.querySelector(".home-btn").first())
 
 
 //Eventlistener to control the display of the search field or hide the search field.
