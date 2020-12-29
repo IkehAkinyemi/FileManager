@@ -34,6 +34,11 @@ let secondDirContainer = `
   </div>
 `;
 
+
+//Eventlistener to control the display of the directory modal or hide it.
+console.log(document.querySelector(".home-btn").first())
+
+
 //Eventlistener to control the display of the search field or hide the search field.
 searchContainer.addEventListener("click", (e) => {
   if (searchModal.style.display == "none" && (e.target.classList.contains("down-arrow-btn") || e.target.alt == "down-arrow")) {
@@ -44,6 +49,7 @@ searchContainer.addEventListener("click", (e) => {
     }
   }
 });
+
 
 body.addEventListener('click', (e) => {
   if (!e.target.classList.contains("down-arrow-btn") && e.target.alt != "down-arrow") {
