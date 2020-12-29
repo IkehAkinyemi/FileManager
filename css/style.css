@@ -50,10 +50,12 @@
 
 .nav__location--active {
   display: flex;
+  display: none;
 }
 
 .nav__location .search-active {
   display: none;
+  display: flex;
   position: relative;
   width: 100%;
   border-radius: 3px;
@@ -319,6 +321,7 @@
   margin-left: -1.5rem;
   border-radius: 5px;
   box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #fcfbfa88;
+  display: none;
 }
 
 .nav .modal--primary-actions [alt="drop-up-arrow"] {
@@ -351,8 +354,8 @@
   display: none;
   width: 310px;
   background-color: #fcfcfb;
-  margin-top: 1rem;
-  margin-left: -9.4rem;
+  margin-top: 19.2rem;
+  margin-left: 1.3rem;
   border-radius: 5px;
   box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #fcfbfa88;
   text-align: start;

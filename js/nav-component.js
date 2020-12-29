@@ -36,25 +36,36 @@ let secondDirContainer = `
 
 
 //Eventlistener to control the display of the directory modal or hide it.
-
+dirContainer.addEventListener('click', (e) => {
+  console.log(primaryModal.style.display);
+  if (e.target.alt == "down-arrow" && primaryModal.style.display == "") {
+    primaryModal.style.display = "block";
+  } else {
+    if (e.target.alt == "down-arrow" && primaryModal.style.display == "block") {
+      primaryModal.style.display = "";
+    }
+  }
+})
 
 //Eventlistener to control the display of the search field or hide the search field.
 searchContainer.addEventListener("click", (e) => {
-  if (searchModal.style.display == "none" && (e.target.classList.contains("down-arrow-btn") || e.target.alt == "down-arrow")) {
+  if (searchModal.style.display == "" && (e.target.classList.contains("down-arrow-btn") || e.target.alt == "down-arrow")) {
     searchModal.style.display = "block";
   } else {
     if(searchModal.style.display == "block" && (e.target.classList.contains("down-arrow-btn") || e.target.alt == "down-arrow")) {
-      searchModal.style.display = "none";
+      searchModal.style.display = "";
     }
   }
 });
 
 
 body.addEventListener('click', (e) => {
-  if (!e.target.classList.contains("down-arrow-btn") && e.target.alt != "down-arrow") {
-    if(!e.target.closest(".down-arrow-btn")) {
-      searchModal.style.display = "none";
+  if (e.target.alt != "down-arrow") {
+    if(!e.target.closest(".down-arrow-btn") && !e.target.classList.contains("down-arrow-btn")) {
+      searchModal.style.display = "";
       isSearchModal = false;
     }
+
+    if ()
   }
 });
