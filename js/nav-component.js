@@ -63,9 +63,18 @@ searchContainer.addEventListener("click", (e) => {
 });
 
 // toggle the display of the search container and the search input
+let searchContFlag = false
 searchBtn.addEventListener("click", (e) => {
-  if (e.target.closest(".nav__search-container") || e.target.className == "nav__search-container") {
-    
+  if (!searchContFlag && (e.target.closest(".nav__search-container") || e.target.className == "nav__search-container")) {
+    dirContainer.style.display = "none";
+    searchContainer.style.display = "flex";
+    searchContFlag = true;
+  } else {
+    if (searchContFlag && (e.target.closest(".nav__search-container") || e.target.className == "nav__search-container")) {
+      dirContainer.style.display = "flex";
+      searchContainer.style.display = "none";
+      searchContFlag = false;
+    }
   }
 })
 
