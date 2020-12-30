@@ -37,15 +37,16 @@ let secondDirContainer = `
 
 //Eventlistener to control the display of the directory modal or hide it.
 dirContainer.addEventListener('click', (e) => {
-  console.log(primaryModal.style.display);
-  if (e.target.alt == "down-arrow" && primaryModal.style.display == "") {
+  if (e.target.closest(".pwd") && e.target.closest(".pwd").lastElementChild.className == "down-arrow-dir" && primaryModal.style.display == "") {
     primaryModal.style.display = "block";
   } else {
-    if (e.target.alt == "down-arrow" && primaryModal.style.display == "block") {
+    if (e.target.closest(".pwd") && e.target.closest(".pwd").lastElementChild.className == "down-arrow-dir" && primaryModal.style.display == "block") {
       primaryModal.style.display = "";
     }
   }
 })
+
+
 
 //Eventlistener to control the display of the search field or hide the search field.
 searchContainer.addEventListener("click", (e) => {
@@ -66,6 +67,8 @@ body.addEventListener('click', (e) => {
       isSearchModal = false;
     }
 
-    if ()
+    if (!e.target.closest(".pwd")) {
+      primaryModal.style.display = "";
+    }
   }
 });
