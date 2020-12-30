@@ -12,7 +12,7 @@
      firstDirName  = document.querySelector(".pwd__path-name"),
      primaryModal = document.querySelector(".modal--primary-actions"),
      searchContainer = document.querySelector(".search-active"),
-     searchIcon = document.querySelector("[alt='search']"),
+     searchBtn = document.querySelector(".nav__search-container"),
      navSearchField = document.querySelector("#search-input"),
      searchFieldDropDown = document.querySelector(".down-arrow-btn"),
      body = document.querySelector(".main"),
@@ -38,14 +38,17 @@ let secondDirContainer = `
 //Eventlistener to control the display of the directory modal or hide it.
 dirContainer.addEventListener('click', (e) => {
   if (e.target.closest(".pwd") && e.target.closest(".pwd").lastElementChild.className == "down-arrow-dir" && primaryModal.style.display == "") {
-    primaryModal.style.display = "block";
+    e.target.closest(".pwd").style.backgroundColor = "#8c97a0";
+    setTimeout(() => {
+      e.target.closest(".pwd").style.backgroundColor = "#fcfbfa";
+      primaryModal.style.display = "block";
+    }, 200);
   } else {
     if (e.target.closest(".pwd") && e.target.closest(".pwd").lastElementChild.className == "down-arrow-dir" && primaryModal.style.display == "block") {
       primaryModal.style.display = "";
     }
   }
 })
-
 
 
 //Eventlistener to control the display of the search field or hide the search field.
@@ -59,6 +62,12 @@ searchContainer.addEventListener("click", (e) => {
   }
 });
 
+// toggle the display of the search container and the search input
+searchBtn.addEventListener("click", (e) => {
+  if (e.target.closest(".nav__search-container") || e.target.className == "nav__search-container") {
+    
+  }
+})
 
 body.addEventListener('click', (e) => {
   if (e.target.alt != "down-arrow") {
