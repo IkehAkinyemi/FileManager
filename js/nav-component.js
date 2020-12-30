@@ -68,11 +68,23 @@ searchBtn.addEventListener("click", (e) => {
   if (!searchContFlag && (e.target.closest(".nav__search-container") || e.target.className == "nav__search-container")) {
     dirContainer.style.display = "none";
     searchContainer.style.display = "flex";
+    searchBtn.animate([
+      { backgroundColor: '#8c97a0' }
+    ], {
+      duration: 200,
+      fill: "forwards"
+    });
     searchContFlag = true;
   } else {
     if (searchContFlag && (e.target.closest(".nav__search-container") || e.target.className == "nav__search-container")) {
       dirContainer.style.display = "flex";
       searchContainer.style.display = "none";
+      searchBtn.animate([
+        { backgroundColor: '#fcfbfa' }
+      ], {
+        duration: 200,
+        fill: "forwards"
+      });
       searchContFlag = false;
     }
   }
