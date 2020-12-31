@@ -95,13 +95,13 @@ searchBtn.addEventListener("click", (e) => {
 let viewOptionFlag = false;
 
 viewOptionBtn.addEventListener("click", (e) => {
-  if (e.target.closest(".nav__view-options") && !viewOptionFlag) {
+  if ((e.target.closest(".nav__view-options") && !viewOptionFlag) || e.target.closest(".modal--view-options")) {
     viewOptionModal.style.display = "block";
     viewOptionFlag = true;
   } else {
-    if (viewOptionFlag) {
+    if (viewOptionFlag && e.target.closest(".nav__view-options")) {
       viewOptionModal.style.display = "";
-      viewOptionFlag = true;
+      viewOptionFlag = false;
     }
   }
 });
@@ -114,6 +114,11 @@ body.addEventListener('click', (e) => {
 
     if (!e.target.closest(".pwd")) {
       primaryModal.style.display = "";
+    }
+
+    if (!e.target.closest(".nav__view-options")) {
+      viewOptionModal.style.display = "";
+      viewOptionFlag = false;
     }
   }
 });
