@@ -18,7 +18,9 @@
      body = document.querySelector(".main"),
      searchModal = document.querySelector(".modal--search-actions"),
      viewOptionsBtn = document.querySelector(".nav__view-options"),
-     viewOptionsModal = document.querySelector(".modal--view-options");
+     viewOptionsModal = document.querySelector(".modal--view-options"),
+     otherOptionsBtn = document.querySelector(".nav__other-actions"),
+     otherOptionsModal = document.querySelector(".modal--secondary-actions");
 
 /**
  * All document variables that will created 
@@ -100,6 +102,22 @@ viewOptionsBtn.addEventListener("click", (e) => {
   }
 });
 
+//toggle the display of modal--others-options
+let otherOptionsFlag = false;
+otherOptionsBtn.addEventListener("click", (e) => {
+  if ((e.target.closest(".nav__other-actions") && !otherOptionsFlag) || e.target.closest(".modal--secondary-actions")) {
+    BtnBackgroundColorAnimate(otherOptionsBtn, true);
+    otherOptionsModal.style.display = "block";
+    otherOptionsFlag = true;
+  } else {
+    if (otherOptionsFlag && e.target.closest(".nav__other-actions")) {
+      BtnBackgroundColorAnimate(otherOptionsBtn, false);
+      otherOptionsModal.style.display = "";
+      otherOptionsFlag = false;
+    }
+  }
+});
+
 body.addEventListener('click', (e) => {
   if (e.target.alt != "down-arrow") {
     if(!e.target.closest(".down-arrow-btn") && !e.target.classList.contains("down-arrow-btn")) {
@@ -115,6 +133,12 @@ body.addEventListener('click', (e) => {
       BtnBackgroundColorAnimate(viewOptionsBtn, false);
       viewOptionsModal.style.display = "";
       viewOptionsFlag = false;
+    }
+    
+    if (!e.target.closest(".nav__other-actions")) {
+      BtnBackgroundColorAnimate(otherOptionsBtn, false);
+      otherOptionsModal.style.display = "";
+      otherOptionsFlag = false;
     }
   }
 });
