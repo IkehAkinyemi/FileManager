@@ -16,8 +16,9 @@
      navSearchField = document.querySelector("#search-input"),
      searchFieldDropDown = document.querySelector(".down-arrow-btn"),
      body = document.querySelector(".main"),
-     searchModal = document.querySelector(".modal--search-actions");
-
+     searchModal = document.querySelector(".modal--search-actions"),
+     viewOptionBtn = document.querySelector(".nav__view-options"),
+     viewOptionModal = document.querySelector(".modal--view-options");
 
 /**
  * All document variables that will created 
@@ -48,7 +49,7 @@ dirContainer.addEventListener('click', (e) => {
       primaryModal.style.display = "";
     }
   }
-})
+});
 
 
 //Eventlistener to control the display of the search field or hide the search field.
@@ -65,7 +66,7 @@ searchContainer.addEventListener("click", (e) => {
 // toggle the display of the search container and the search input
 let searchContFlag = false
 searchBtn.addEventListener("click", (e) => {
-  if (!searchContFlag && (e.target.closest(".nav__search-container") || e.target.className == "nav__search-container")) {
+  if (!searchContFlag && (e.target.closest(".nav__search-container"))) {
     dirContainer.style.display = "none";
     searchContainer.style.display = "flex";
     searchBtn.animate([
@@ -76,7 +77,7 @@ searchBtn.addEventListener("click", (e) => {
     });
     searchContFlag = true;
   } else {
-    if (searchContFlag && (e.target.closest(".nav__search-container") || e.target.className == "nav__search-container")) {
+    if (searchContFlag && e.target.closest(".nav__search-container")) {
       dirContainer.style.display = "flex";
       searchContainer.style.display = "none";
       searchBtn.animate([
@@ -88,13 +89,27 @@ searchBtn.addEventListener("click", (e) => {
       searchContFlag = false;
     }
   }
-})
+});
+
+// toggle the display of the view options modal
+let viewOptionFlag = false;
+
+viewOptionBtn.addEventListener("click", (e) => {
+  if (e.target.closest(".nav__view-options") && !viewOptionFlag) {
+    viewOptionModal.style.display = "block";
+    viewOptionFlag = true;
+  } else {
+    if (viewOptionFlag) {
+      viewOptionModal.style.display = "";
+      viewOptionFlag = true;
+    }
+  }
+});
 
 body.addEventListener('click', (e) => {
   if (e.target.alt != "down-arrow") {
     if(!e.target.closest(".down-arrow-btn") && !e.target.classList.contains("down-arrow-btn")) {
       searchModal.style.display = "";
-      isSearchModal = false;
     }
 
     if (!e.target.closest(".pwd")) {
