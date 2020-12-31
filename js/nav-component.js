@@ -17,8 +17,8 @@
      searchFieldDropDown = document.querySelector(".down-arrow-btn"),
      body = document.querySelector(".main"),
      searchModal = document.querySelector(".modal--search-actions"),
-     viewOptionBtn = document.querySelector(".nav__view-options"),
-     viewOptionModal = document.querySelector(".modal--view-options");
+     viewOptionsBtn = document.querySelector(".nav__view-options"),
+     viewOptionsModal = document.querySelector(".modal--view-options");
 
 /**
  * All document variables that will created 
@@ -92,18 +92,35 @@ searchBtn.addEventListener("click", (e) => {
 });
 
 // toggle the display of the view options modal
-let viewOptionFlag = false;
+let viewOptionsFlag = false;
 
-viewOptionBtn.addEventListener("click", (e) => {
-  if ((e.target.closest(".nav__view-options") && !viewOptionFlag) || e.target.closest(".modal--view-options")) {
-    viewOptionModal.style.display = "block";
-    viewOptionFlag = true;
+viewOptionsBtn.addEventListener("click", (e) => {
+  if ((e.target.closest(".nav__view-options") && !viewOptionsFlag) || e.target.closest(".modal--view-options")) {
+    viewOptionsBtn.animate([
+      { backgroundColor: '#8c97a0' }
+    ], {
+      duration: 200,
+      fill: "forwards"
+    });
+    viewOptionsModal.style.display = "block";
+    viewOptionsFlag = true;
   } else {
-    if (viewOptionFlag && e.target.closest(".nav__view-options")) {
-      viewOptionModal.style.display = "";
-      viewOptionFlag = false;
+    if (viewOptionsFlag && e.target.closest(".nav__view-options")) {
+      viewOptionsBtn.animate([
+        { backgroundColor: '#fcfbfa' }
+      ], {
+        duration: 200,
+        fill: "forwards"
+      });
+      viewOptionsModal.style.display = "";
+      viewOptionsFlag = false;
     }
   }
+});viewOptionsBtn.animate([
+  { backgroundColor: '#fcfbfa' }
+], {
+  duration: 200,
+  fill: "forwards"
 });
 
 body.addEventListener('click', (e) => {
@@ -117,8 +134,14 @@ body.addEventListener('click', (e) => {
     }
 
     if (!e.target.closest(".nav__view-options")) {
-      viewOptionModal.style.display = "";
-      viewOptionFlag = false;
+      viewOptionsBtn.animate([
+        { backgroundColor: '#fcfbfa' }
+      ], {
+        duration: 200,
+        fill: "forwards"
+      });
+      viewOptionsModal.style.display = "";
+      viewOptionsFlag = false;
     }
   }
 });
