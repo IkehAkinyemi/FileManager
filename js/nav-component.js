@@ -55,9 +55,11 @@ dirContainer.addEventListener('click', (e) => {
 //Eventlistener to control the display of the search field or hide the search field.
 searchContainer.addEventListener("click", (e) => {
   if (searchModal.style.display == "" && (e.target.classList.contains("down-arrow-btn") || e.target.alt == "down-arrow")) {
+    BtnBackgroundColorAnimate(searchFieldDropDown, true);
     searchModal.style.display = "block";
   } else {
     if(searchModal.style.display == "block" && (e.target.classList.contains("down-arrow-btn") || e.target.alt == "down-arrow")) {
+      BtnBackgroundColorAnimate(searchFieldDropDown, false);
       searchModal.style.display = "";
     }
   }
@@ -67,25 +69,15 @@ searchContainer.addEventListener("click", (e) => {
 let searchContFlag = false
 searchBtn.addEventListener("click", (e) => {
   if (!searchContFlag && (e.target.closest(".nav__search-container"))) {
+    BtnBackgroundColorAnimate(searchBtn, true);
     dirContainer.style.display = "none";
     searchContainer.style.display = "flex";
-    searchBtn.animate([
-      { backgroundColor: '#8c97a0' }
-    ], {
-      duration: 200,
-      fill: "forwards"
-    });
     searchContFlag = true;
   } else {
     if (searchContFlag && e.target.closest(".nav__search-container")) {
+      BtnBackgroundColorAnimate(searchBtn, false);
       dirContainer.style.display = "flex";
       searchContainer.style.display = "none";
-      searchBtn.animate([
-        { backgroundColor: '#fcfbfa' }
-      ], {
-        duration: 200,
-        fill: "forwards"
-      });
       searchContFlag = false;
     }
   }
@@ -96,36 +88,22 @@ let viewOptionsFlag = false;
 
 viewOptionsBtn.addEventListener("click", (e) => {
   if ((e.target.closest(".nav__view-options") && !viewOptionsFlag) || e.target.closest(".modal--view-options")) {
-    viewOptionsBtn.animate([
-      { backgroundColor: '#8c97a0' }
-    ], {
-      duration: 200,
-      fill: "forwards"
-    });
+    BtnBackgroundColorAnimate(viewOptionsBtn, true);
     viewOptionsModal.style.display = "block";
     viewOptionsFlag = true;
   } else {
     if (viewOptionsFlag && e.target.closest(".nav__view-options")) {
-      viewOptionsBtn.animate([
-        { backgroundColor: '#fcfbfa' }
-      ], {
-        duration: 200,
-        fill: "forwards"
-      });
+      BtnBackgroundColorAnimate(viewOptionsBtn, false);
       viewOptionsModal.style.display = "";
       viewOptionsFlag = false;
     }
   }
-});viewOptionsBtn.animate([
-  { backgroundColor: '#fcfbfa' }
-], {
-  duration: 200,
-  fill: "forwards"
 });
 
 body.addEventListener('click', (e) => {
   if (e.target.alt != "down-arrow") {
     if(!e.target.closest(".down-arrow-btn") && !e.target.classList.contains("down-arrow-btn")) {
+      BtnBackgroundColorAnimate(searchFieldDropDown, false);
       searchModal.style.display = "";
     }
 
@@ -134,14 +112,29 @@ body.addEventListener('click', (e) => {
     }
 
     if (!e.target.closest(".nav__view-options")) {
-      viewOptionsBtn.animate([
-        { backgroundColor: '#fcfbfa' }
-      ], {
-        duration: 200,
-        fill: "forwards"
-      });
+      BtnBackgroundColorAnimate(viewOptionsBtn, false);
       viewOptionsModal.style.display = "";
       viewOptionsFlag = false;
     }
   }
 });
+
+//custom functions for repeating features.
+
+function BtnBackgroundColorAnimate(element, boolean) {
+  if (boolean) {
+    element.animate([
+      { backgroundColor: '#8c97a0' }
+    ], {
+      duration: 200,
+      fill: "forwards"
+    });
+  } else {
+    element.animate([
+      { backgroundColor: '#fcfbfa' }
+    ], {
+      duration: 200,
+      fill: "forwards"
+    });
+  }
+}
