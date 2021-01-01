@@ -20,7 +20,8 @@
      viewOptionsBtn = document.querySelector(".nav__view-options"),
      viewOptionsModal = document.querySelector(".modal--view-options"),
      otherOptionsBtn = document.querySelector(".nav__other-actions"),
-     otherOptionsModal = document.querySelector(".modal--secondary-actions");
+     otherOptionsModal = document.querySelector(".modal--secondary-actions"),
+     cancelBtn = document.querySelector("[alt='cancel']");
 
 /**
  * All document variables that will created 
@@ -118,6 +119,14 @@ otherOptionsBtn.addEventListener("click", (e) => {
   }
 });
 
+// the resize btn eventlistener for resizing the file manager window.
+cancelBtn.addEventListener("click", (e) => {
+ if (e.target.alt == "cancel") {
+   body.remove();
+ }
+});
+
+// EventListener on the body of the file manager to close any opened modal.
 body.addEventListener('click', (e) => {
   if (e.target.alt != "down-arrow") {
     if(!e.target.closest(".down-arrow-btn") && !e.target.classList.contains("down-arrow-btn")) {
