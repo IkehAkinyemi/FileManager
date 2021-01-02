@@ -67,14 +67,14 @@
 
               <!-- modal for the controlling the search algorithm search-method-->
               <div class="modal modal--search-actions">
-                <img src="./assets/svg/drop-up-arrow.svg" alt="drop-up-arrow">
+                <img src="./assets/svg/drop-up-arrow.svg" alt="drop-up-arrow" id="search-modal-drop-arrow">
                 <div class="when-container">
                   <p class="when-p">When</p>
 
                   <p class="select-when-p" title="Select a date">Select Dates...</p>
 
                   <span class="date-input">
-                    <input type="text" id="date-input-field" autocomplete="off">
+                    <input type="text" id="date-input-field" placeholder="input date here..." autocomplete="off" autofocus>
                     <img src="./assets/svg/calendar.svg" alt="calendar">
                   </span>
 
@@ -162,17 +162,17 @@
         <span class="nav__view-options" title="View options">
           <img src="./assets/svg/down-arrow.svg" alt="down-arrow">
 
-          <div class="modal modal--view-options">
+          <div class="modal modal--view-options" title="">
             <img src="./assets/svg/drop-up-arrow.svg" alt="drop-up-arrow">
 
             <div class="ctrl-zoom">
-              <span class="zoom-in">
+              <span class="zoom-in" title="Zoom out">
                 <img src="./assets/svg/zoom-in.svg" alt="zoom-in">
               </span>
 
-              <span class="zoom-percentage">50%</span>
+              <span class="zoom-percentage" title="Reset zoom">50%</span>
 
-              <span class="zoom-out">
+              <span class="zoom-out" title="Zoom in">
                 <img src="./assets/svg/zoom-out.svg" alt="zoom-out">
               </span>
             </div>

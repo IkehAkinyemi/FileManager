@@ -17,6 +17,7 @@
      searchFieldDropDown = document.querySelector(".down-arrow-btn"),
      body = document.querySelector(".main"),
      searchModal = document.querySelector(".modal--search-actions"),
+     searchModalDropBtn = document.querySelector("#search-modal-drop-arrow"),
      viewOptionsBtn = document.querySelector(".nav__view-options"),
      viewOptionsModal = document.querySelector(".modal--view-options"),
      otherOptionsBtn = document.querySelector(".nav__other-actions"),
@@ -65,6 +66,33 @@ searchContainer.addEventListener("click", (e) => {
       BtnBackgroundColorAnimate(searchFieldDropDown, false);
       searchModal.style.display = "";
     }
+  }
+});
+
+// eventlistener to open other sections of the search modal.
+searchModal.addEventListener("click", (e) => {
+  if (e.target.className == "select-when-p") {
+    searchModal.style.marginTop = "31.5rem";
+    searchModal.style.marginLeft = "-26rem";
+    searchModalDropBtn.style.right = "-4%";
+    searchModalDropBtn.style.top = "0.5%";
+    searchModalDropBtn.style.transform = "rotate(90deg)";
+    document.querySelector(".select-when-p").style.display = "none";
+    document.querySelector(".date-input").style.display = "flex";
+    document.querySelector(".anything-input-container").style.display = "";
+    document.querySelector(".date-input-container").style.display = "block";
+  };
+
+  if (e.target.closest(".anything-input")) {
+    searchModal.style.marginTop = "32.5rem";
+    searchModal.style.marginLeft = "1.3rem";
+    searchModalDropBtn.style.right = "50%";
+    searchModalDropBtn.style.top = "-15px";
+    searchModalDropBtn.style.transform = "rotate(0deg)";
+    document.querySelector(".select-when-p").style.display = "block";
+    document.querySelector(".date-input").style.display = "none";
+    document.querySelector(".date-input-container").style.display = "";
+    document.querySelector(".anything-input-container").style.display = "block";
   }
 });
 
@@ -132,6 +160,16 @@ body.addEventListener('click', (e) => {
     if(!e.target.closest(".down-arrow-btn") && !e.target.classList.contains("down-arrow-btn")) {
       BtnBackgroundColorAnimate(searchFieldDropDown, false);
       searchModal.style.display = "";
+      searchModal.style.marginTop = "19.2rem";
+      searchModal.style.marginLeft = "1.3rem";
+      searchModalDropBtn.style.right = "50%";
+      searchModalDropBtn.style.top = "-15px";
+      searchModalDropBtn.style.transform = "rotate(0deg)";
+      document.querySelector(".select-when-p").style.display = "block";
+      document.querySelector(".date-input").style.display = "none";
+      document.querySelector(".date-input-container").style.display = "";
+      document.querySelector(".anything-input-container").style.display = "";
+
     }
 
     if (!e.target.closest(".pwd")) {
