@@ -209,3 +209,40 @@ function BtnBackgroundColorAnimate(element, boolean) {
     });
   }
 }
+
+
+function BtnBackgroundColorAnimate(element, boolean) {
+  if (boolean) {
+    element.animate([
+      { backgroundColor: '#8c97a0' }
+    ], {
+      duration: 200,
+      fill: "forwards"
+    });
+  } else {
+    element.animate([
+      { backgroundColor: '#fcfbfa' }
+    ], {
+      duration: 200,
+      fill: "forwards"
+    });
+  }
+}
+
+function BtnBackgroundColorAnimate(element, boolean) {
+  if (boolean) {
+    element.animate([
+      { backgroundColor: '#8c97a0' }
+    ], {
+      duration: 200,
+      fill: "forwards"
+    });
+  } else {
+    element.animate([
+      { backgroundColor: '#fcfbfa' }
+    ], {
+      duration: 200,
+      fill: "forwards"
+    });
+  }
+}
