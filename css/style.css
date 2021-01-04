@@ -185,7 +185,7 @@
   background-color: #fcfcfb;
   margin-top: 28rem;
   border-radius: 5px;
-  box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #fcfbfa88;
+  box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #dbdbdb;
   margin-left: 1.2rem;
   padding: 1rem 1rem 1rem 1rem;
 }
@@ -318,7 +318,7 @@
   margin-top: 2.7rem;
   margin-left: -1.5rem;
   border-radius: 5px;
-  box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #fcfbfa88;
+  box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #dbdbdb;
   display: none;
 }
 
@@ -355,7 +355,7 @@
   margin-top: 19.2rem;
   margin-left: 1.3rem;
   border-radius: 5px;
-  box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #fcfbfa88;
+  box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #dbdbdb;
   text-align: start;
   padding: .5rem 1.2rem;
   line-height: 16px;
@@ -385,7 +385,6 @@
 }
 
 .nav .modal--search-actions .when-container .date-input {
-  display: flex;
   display: none;
   border: 1px solid;
   border-radius: 4px;
@@ -519,7 +518,7 @@
   background-color: #fcfcfb;
   margin-top: 26rem;
   border-radius: 5px;
-  box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #fcfbfa88;
+  box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #dbdbdb;
   margin-left: 1.2rem;
   padding: 1rem 1rem 1rem 1rem;
 }
