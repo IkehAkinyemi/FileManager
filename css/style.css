@@ -495,7 +495,7 @@
   border: none;
   background-color: #dbdbdb;
   font-size: 16px;
-  color: #0a0a0ab4;
+  color: #0a0a0a;
   font-family: "Ubuntu", sans-serif;
   border-radius: 5px;
 }
@@ -507,7 +507,7 @@
   border-left: 1px solid #8c97a0;
   background-color: #fcfcfb;
   font-size: 16px;
-  color: #0a0a0ab4;
+  color: #0a0a0a;
   font-family: "Ubuntu", sans-serif;
   border-radius: 5px;
 }
@@ -600,9 +600,58 @@
   margin-bottom: 6px;
 }
 
+.app-body {
+  display: flex;
+}
+
+.folder-container {
+  width: 87%;
+}
+
+aside {
+  background-color: #eeeded;
+  padding-left: 1rem;
+  width: 14%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+aside div {
+  display: flex;
+}
+
+aside img {
+  width: 17px;
+  margin-right: 0.8rem;
+}
+
+aside .cloud-sync-para {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+aside::-webkit-scrollbar {
+  width: 4px;
+  /* width of the entire scrollbar */
+}
+
+aside::-webkit-scrollbar-track {
+  background-color: #dbdbdb;
+  /* color of the tracking area */
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #dbdbdb;
+  /* creates padding around scroll thumb aside*/
+}
+
 body {
   background-color: #5a5151;
-  color: #0a0a0ab4;
+  color: #0a0a0a;
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
   box-sizing: border-box;
@@ -613,4 +662,23 @@ body {
   border-radius: 6px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: orange;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid orange;
+  /* creates padding around scroll thumb */
 }

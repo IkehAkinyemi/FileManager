@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./assets/iconfont/font/flaticon.css">
+  <script src="https://use.fontawesome.com/b9b7c565de.js"></script>  
   <link rel="stylesheet" href="./css/style.css">
   <title>FileManager</title>
 </head>
 <body>
 
   <!-- Using BEM naming conventions in the naming the element's classes and ids-->
-  <main id="main">
+  <main id="main">  <link rel="stylesheet" type="text/css" href="./assets/iconfont/font/flaticon.css">
+
     <section class="main">
       <section class="nav">
 
@@ -285,62 +286,63 @@
 
       <section class="app-body">
         <aside class="app-body__sidebar-panel">
-          <div class="recent-container">
+          <div class="recent-container" title="Recent files">
             <img src="./assets/svg/recent.svg" alt="recent">
             <p class="recent-para">Recent</p>
           </div>
 
-          <div class="starred-container">
+          <div class="starred-container" title="Favourite files">
             <img src="./assets/svg/starred.svg" alt="starred">
             <p class="starred-para">Starred</p>
           </div>
 
-          <div class="home-container">
+          <div class="home-container" title="Open your personal folder">
             <img src="./assets/svg/home.svg" alt="home-aside">
             <p class="home-para">Home</p>
           </div>
           
-          <div class="documents-container">
+          <div class="documents-container" title="/home/ikehakinyemi/Documents">
             <img src="./assets/svg/file.svg" alt="documents">
             <p class="documents-para">Documents</p>
           </div>
 
-          <div class="downloads-container">
-            <img src="./assets/svg/cloud-compdownloads" alt="downloads">
+          <div class="downloads-container" title="/home/ikehakinyemi/Downloads">
+            <img src="./assets/svg/cloud-computing.svg" alt="downloads">
             <p class="downloads-para">Downloads</p>
           </div>
 
-          <di class="music-container">
+          <div class="music-container" title="/home/ikehakinyemi/Music">
             <img src="./assets/svg/music-player.svg" alt="music">
             <p class="music-para">Music</p>
-          </di>
+          </div>
 
-          <di class="pictures-container">
+          <div class="pictures-container" title="/home/ikehakinyemi/Pictures">
             <img src="./assets/svg/picture.svg" alt="pictures">
             <p class="pictures-para">Pictures</p>
-          </di>
+          </div>
 
-          <di class="videos-container">
+          <div class="videos-container" title="/home/ikehakinyemi/Videos">
             <img src="./assets/svg/film-strip.svg" alt="videos">
             <p class="videos-para">Videos</p>
-          </di>
+          </div>
 
-          <di class="trash-container">
+          <div class="trash-container" title="Open trash">
             <img src="./assets/svg/trash-can.svg" alt="trash">
             <p class="trash-para">Trash</p>
-          </di>
+          </div>
 
-          <di class="cloud-sync-container">
+          <div class="cloud-sync-container" title="Mount and open mrikehchukwuka@gmail.com">
             <img src="./assets/svg/server.svg" alt="cloud-sync">
             <p class="cloud-sync-para">mrikehchukwuka@gmail.com</p>
-          </di>
+          </div>
         </aside>
 
         <section class="folder-container">
-          
+          <i class="fa fa-folder"></i>
         </section>
     </section>
   </main>
 </body>
 <script src="./js/nav-component.js"></script>
+<script src="./js/aside-panel.js"></script>
 </html>
