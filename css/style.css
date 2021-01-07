@@ -670,12 +670,30 @@ ul.anything-collection::-webkit-scrollbar {
   display: flex;
 }
 
-.folder-container {
+.folder {
   width: 87%;
 }
 
+.folder__folder-container {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: fit-content;
+}
+
+.fa-folder:before {
+  font-size: 3.5rem;
+  color: rebeccapurple;
+}
+
+.fa-folder::after {
+  margin-left: 13rem;
+  color: red;
+}
+
 @media only screen and (max-width: 995px) {
-  .folder-container {
+  .folder {
     width: 80%;
   }
 }
