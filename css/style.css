@@ -679,11 +679,27 @@ ul.anything-collection::-webkit-scrollbar {
   flex-direction: column;
   text-align: center;
   width: fit-content;
+  position: relative;
+}
+
+.folder__folder-container .auxillary-folder-icon {
+  color: blue;
+  position: absolute;
+  transform: rotateY(180deg);
+  left: 17.7px;
+  bottom: 10px;
+}
+
+.folder__folder-container .auxillary-folder-icon .fa-folder:before {
+  font-size: 2.8rem !important;
+  transform: scaleX(1.2);
+  color: rebeccapurple;
 }
 
 .folder__folder-container .fa-folder:before {
   font-size: 3.5rem;
-  color: reb;
+  color: #67686b;
+  display: block;
 }
 
 .folder__folder-container .folderName {
