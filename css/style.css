@@ -672,9 +672,12 @@ ul.anything-collection::-webkit-scrollbar {
 
 .folder {
   width: 87%;
-  padding: 1rem;
+  padding: 1rem 0rem 1rem 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, 80px);
+  grid-template-rows: repeat(auto-fit, 76px);
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
 }
 
 .folder__folder-container {
@@ -684,7 +687,6 @@ ul.anything-collection::-webkit-scrollbar {
   width: fit-content;
   height: fit-content;
   position: relative;
-  border: 1px solid;
 }
 
 .folder__folder-container .auxillary-folder-icon {
