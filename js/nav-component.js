@@ -115,7 +115,39 @@ searchBtn.addEventListener("click", (e) => {
   }
 });
 
+// control the toggle between the grid and list display of folders.
+let toggleBtnFlag = true;
+
+toggleBtn.addEventListener("click", (e) => {
+  if (e.target.closest(".nav__toggle-view")) {
+    toggleBtn.animate([
+      { backgroundColor: '#8c97a0' }
+    ], {
+      duration: 250,
+    });
+
+    if(toggleBtnFlag) {
+      document.querySelector("#list-view").style.display = "none";
+      document.querySelector('#grid-view').style.display = "block";
+
+      console.log(document.querySelector("#list-view"), document.querySelector('#grid-view'));
+      toggleBtnFlag = false;
+    } else {
+      if (!toggleBtnFlag) {
+        document.querySelector("#list-view").style.display = "block";
+      document.querySelector('#grid-view').style.display = "none";
+
+      console.log(document.querySelector("#list-view"), document.querySelector('#grid-view'));
+      toggleBtnFlag = true;
+      }
+    }
+
+    document.querySelector("#folder-section").classList.toggle("folder--list-view");
+  }
+});
+
 // toggle the display of the view options modal
+
 let viewOptionsFlag = false;
 
 viewOptionsBtn.addEventListener("click", (e) => {
