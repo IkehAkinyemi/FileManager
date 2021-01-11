@@ -713,6 +713,39 @@ ul.anything-collection::-webkit-scrollbar {
   margin-bottom: 0rem;
 }
 
+.folder--list-view {
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.folder--list-view .folder__folder-container {
+  flex-direction: row;
+  width: unset;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.folder--list-view .folder__folder-container .auxillary-folder-icon {
+  top: 9px;
+  left: 20px;
+}
+
+.folder--list-view .folder__folder-container .auxillary-folder-icon .fa-folder:before {
+  transform: scaleX(1.259);
+}
+
+.folder--list-view .folder__folder-container .folderName {
+  line-height: 70px;
+  margin-left: 1rem;
+}
+
+.folder__folder-container:hover {
+  background-color: #dbdbdb;
+}
+
 @media only screen and (max-width: 995px) {
   .folder {
     width: 80%;

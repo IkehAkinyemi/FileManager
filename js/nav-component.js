@@ -18,6 +18,7 @@
      body = document.querySelector(".main"),
      searchModal = document.querySelector(".modal--search-actions"),
      searchModalDropBtn = document.querySelector("#search-modal-drop-arrow"),
+     toggleBtn = document.querySelector(".nav__toggle-view"),
      viewOptionsBtn = document.querySelector(".nav__view-options"),
      viewOptionsModal = document.querySelector(".modal--view-options"),
      otherOptionsBtn = document.querySelector(".nav__other-actions"),
