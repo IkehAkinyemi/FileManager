@@ -192,6 +192,7 @@
   box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #dbdbdb;
   margin-left: 1.2rem;
   padding: 1rem 1rem 1rem 1rem;
+  z-index: 999;
 }
 
 .nav__view-options .modal--view-options [alt="drop-up-arrow"] {
@@ -332,6 +333,7 @@
   border-radius: 5px;
   box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #dbdbdb;
   display: none;
+  z-index: 999;
 }
 
 .nav .modal--primary-actions [alt="drop-up-arrow"] {
@@ -372,6 +374,7 @@
   padding: .5rem 1.2rem;
   line-height: 16px;
   padding-bottom: 15px;
+  z-index: 999;
 }
 
 .nav .modal--search-actions [alt="drop-up-arrow"] {
@@ -533,6 +536,7 @@
   box-shadow: 5px 7px 7px -6.5px #dbdbdb, -6px 7px 7px -6.5px #dbdbdb;
   margin-left: 1.2rem;
   padding: 1rem 1rem 1rem 1rem;
+  z-index: 9999;
 }
 
 .nav .modal--secondary-actions [alt="drop-up-arrow"] {
@@ -746,8 +750,8 @@ ul.anything-collection::-webkit-scrollbar {
   margin-left: 1rem;
 }
 
-.folder__folder-container:hover {
-  background-color: #dbdbdb;
+.folder__folder-container:hover > .folderIcon > .auxillary-folder-icon > .fa-folder:before {
+  color: #dbdbdb;
 }
 
 @media only screen and (max-width: 995px) {
