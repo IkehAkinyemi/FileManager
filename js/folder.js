@@ -1,18 +1,19 @@
 // UI variable
 
 let folderContainer = document.querySelector("#folder-section"),
-    folder = document.querySelector(".folder__folder-container"),
+    folders = document.querySelectorAll(".folder__folder-container"),
     bodyUI = document.querySelector(".main");
 
 body.addEventListener("click", (e) => {
   if (folderContainer.className === "folder") {
-    folder.id = "grid-list-view";
-    console.log("here man");
-    console.log(folderContainer.className.includes("folder--list-view"));
+    folders.forEach(folder => {
+      folder.id = "grid-list-view";
+    });
   };
   
   if (folderContainer.className.includes("folder--list-view")) {
-    folder.id = "";
-    console.log("here young man");
+    folders.forEach(folder => {
+      folder.id = "";
+    });
   }
 })
