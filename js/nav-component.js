@@ -130,19 +130,18 @@ toggleBtn.addEventListener("click", (e) => {
       document.querySelector("#list-view").style.display = "none";
       document.querySelector('#grid-view').style.display = "block";
 
-      console.log(document.querySelector("#list-view"), document.querySelector('#grid-view'));
       toggleBtnFlag = false;
     } else {
       if (!toggleBtnFlag) {
         document.querySelector("#list-view").style.display = "block";
-      document.querySelector('#grid-view').style.display = "none";
+        document.querySelector('#grid-view').style.display = "none";
 
-      console.log(document.querySelector("#list-view"), document.querySelector('#grid-view'));
       toggleBtnFlag = true;
       }
     }
 
     document.querySelector("#folder-section").classList.toggle("folder--list-view");
+    console.log(document.querySelector("#folder-section").className);
   }
 });
 

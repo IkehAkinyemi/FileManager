@@ -750,8 +750,16 @@ ul.anything-collection::-webkit-scrollbar {
   margin-left: 1rem;
 }
 
-.folder__folder-container:hover > .folderIcon > .auxillary-folder-icon > .fa-folder:before {
-  color: #dbdbdb;
+.folder > .folder__folder-container:hover {
+  background-color: #dbdbdb;
+}
+
+#grid-list-view:hover {
+  background-color: unset !important;
+}
+
+#grid-list-view:hover > .folderIcon > .auxillary-folder-icon > .fa-folder:before {
+  color: #808183;
 }
 
 @media only screen and (max-width: 995px) {
