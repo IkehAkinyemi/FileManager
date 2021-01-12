@@ -684,8 +684,8 @@ ul.anything-collection::-webkit-scrollbar {
   display: grid;
   grid-template-columns: repeat(auto-fit, 80px);
   grid-template-rows: repeat(auto-fit, 76px);
-  grid-column-gap: 2%;
-  grid-row-gap: 2%;
+  grid-column-gap: 3%;
+  grid-row-gap: 5%;
 }
 
 .folder__folder-container {
@@ -700,8 +700,8 @@ ul.anything-collection::-webkit-scrollbar {
 .folder__folder-container .auxillary-folder-icon {
   position: absolute;
   transform: rotateY(180deg);
-  left: 18px;
-  bottom: 10px;
+  left: 24.2px;
+  top: 10px;
 }
 
 .folder__folder-container .auxillary-folder-icon .fa-folder:before {
@@ -717,8 +717,17 @@ ul.anything-collection::-webkit-scrollbar {
 }
 
 .folder__folder-container .folderName {
-  margin-top: -0.5rem;
+  margin-top: 0rem;
   margin-bottom: 0rem;
+  padding: 5px;
+  z-index: 999;
+}
+
+.folder__folder-container .folderName > span {
+  display: inline-block;
+  width: 80px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 
 .folder--list-view {
@@ -726,7 +735,10 @@ ul.anything-collection::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 0px;
+  height: 420px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .folder--list-view .folder__folder-container {
@@ -737,17 +749,43 @@ ul.anything-collection::-webkit-scrollbar {
 }
 
 .folder--list-view .folder__folder-container .auxillary-folder-icon {
-  top: 9px;
-  left: 20px;
+  top: 10px;
+  left: 21px;
 }
 
 .folder--list-view .folder__folder-container .auxillary-folder-icon .fa-folder:before {
-  transform: scaleX(1.259);
+  transform: scaleX(1.26);
 }
 
 .folder--list-view .folder__folder-container .folderName {
-  line-height: 70px;
+  line-height: 58px;
   margin-left: 1rem;
+  padding-top: unset;
+}
+
+.folder--list-view .folder__folder-container .folderName > span {
+  width: unset;
+  overflow-x: unset;
+  text-overflow: unset;
+}
+
+.folder--list-view::-webkit-scrollbar {
+  width: 4px;
+  /* width of the entire scrollbar */
+}
+
+.folder--list-view::-webkit-scrollbar-track {
+  background-color: #b6b3b3;
+  /* color of the tracking area */
+}
+
+.folder--list-view::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #dbdbdb;
+  /* creates padding around scroll thumb aside*/
 }
 
 .folder > .folder__folder-container:hover {
@@ -825,6 +863,14 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
   box-sizing: border-box;
+  margin: 0rem;
+}
+
+#main {
+  height: 100vh;
+  border: 4px solid teal;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .main {
@@ -832,6 +878,8 @@ body {
   border-radius: 6px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 body::-webkit-scrollbar {
