@@ -2,7 +2,7 @@
 
 let folderContainer = document.querySelector("#folder-section"),
     folders = document.querySelectorAll(".folder__folder-container"),
-    folderNames = document.querySelectorAll(".folderName");
+    folderNames = document.querySelectorAll(".folderName"),
     bodyUI = document.querySelector(".main");
 
 body.addEventListener("click", (e) => {
@@ -37,3 +37,12 @@ folders.forEach( folder => {
   })
 });
 
+folderContainer.addEventListener("click", (e) => {
+  if (!e.target.closest(".folder__folder-container")) {
+    folderNames.forEach( folderName => {
+      folderName.style.backgroundColor = "unset";
+      folderName.style.color = "unset";
+      folderName.firstElementChild.style.wordBreak = "unset";
+    });
+  }
+  });
